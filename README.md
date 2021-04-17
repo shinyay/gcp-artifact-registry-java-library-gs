@@ -14,6 +14,10 @@ Artifact Regisry manages Java (Maven) artifacts like Sonatype Nexus or JFrog Art
 ## Requirement
 
 ## Usage
+### Enable API
+```
+$ gcloud services enable artifactregistry.googleapis.com
+```
 
 ## Installation
 
