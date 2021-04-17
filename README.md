@@ -1,6 +1,6 @@
-# Name
+# Managing Java Library with Artifact Registry
 
-Overview
+Artifact Regisry manages Java (Maven) artifacts like Sonatype Nexus or JFrog Artifactory.
 
 ## Description
 
