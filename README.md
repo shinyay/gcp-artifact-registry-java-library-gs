@@ -55,18 +55,28 @@ $ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default
 ```
 
 ### 5-a. Display Maven Project Configuration
-```shell
-$ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location us-central1
-```
-
+Create Maven Project
 ```
 $ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
+Display Maven Project Configuration
+```shell
+$ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location us-central1
+```
+
 ### 5-b. Display Gradle Project Configuration
+Create Gradle Project
+```
+$ mkdir shinyay-gradle-lib
+$ gradle init -p shinyay-gradle-lib --type java-library --dsl groovy --test-framework junit-jupiter
+```
+
+Display Gradle Project Configuration
 ```shell
 $ gcloud artifacts print-settings gradle --repository shinyay-maven-repo--location us-central1
 ```
+
 
 ## Installation
 
