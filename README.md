@@ -43,6 +43,12 @@ $ gcloud artifacts repositories add-iam-policy-binding shinyay-maven-repo \
     --role roles/artifactregistry.writer
 ```
 
+### 4. Create Key file
+```
+$ gcloud iam service-accounts keys create shinyay-artifact.json --iam-account=shinyay-artifact@(gcloud config get-value project).iam.gserviceaccount.com
+$ mv shinyay-artifact.json ~/.config/gcloud/
+```
+
 ## Installation
 
 ## References
