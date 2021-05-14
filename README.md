@@ -54,9 +54,14 @@ Set Environment Variable
 $ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
 ```
 
-### 5. Display Maven Project Configuration
+### 5-a. Display Maven Project Configuration
 ```shell
 $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location us-central1
+```
+
+### 5-b. Display Gradle Project Configuration
+```shell
+$ gcloud artifacts print-settings gradle --repository shinyay-maven-repo--location us-central1
 ```
 
 ## Installation
