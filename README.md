@@ -49,6 +49,11 @@ $ gcloud iam service-accounts keys create shinyay-artifact.json --iam-account=sh
 $ mv shinyay-artifact.json ~/.config/gcloud/
 ```
 
+Set Environment Variable
+```shell
+$ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
+```
+
 ## Installation
 
 ## References
