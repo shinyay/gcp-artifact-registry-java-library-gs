@@ -21,9 +21,10 @@ $ gcloud services enable artifactregistry.googleapis.com
 
 ###
 ```
-$ gcloud beta artifacts repositories create private-maven-repo \
+$ gcloud beta artifacts repositories create shinyay-maven-repo \
     --repository-format=maven \
-    --location=us-central1
+    --location=us-central1 \
+    --description="Maven Repository"
 ```
 
 ## Installation
