@@ -59,6 +59,10 @@ $ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default
 $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location us-central1
 ```
 
+```
+$ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+```
+
 ### 5-b. Display Gradle Project Configuration
 ```shell
 $ gcloud artifacts print-settings gradle --repository shinyay-maven-repo--location us-central1
