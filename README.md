@@ -56,6 +56,9 @@ $ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default
 
 ### 5-a. Display Maven Project Configuration
 Create Maven Project
+
+> [Maven Archetype references](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
+
 ```
 $ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
@@ -67,6 +70,9 @@ $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location 
 
 ### 5-b. Display Gradle Project Configuration
 Create Gradle Project
+
+> [gradle init types references](https://docs.gradle.org/current/userguide/build_init_plugin.html)
+
 ```
 $ mkdir shinyay-gradle-lib
 $ gradle init -p shinyay-gradle-lib --type java-library --dsl groovy --test-framework junit-jupiter
