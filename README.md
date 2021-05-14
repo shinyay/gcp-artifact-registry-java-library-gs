@@ -14,17 +14,25 @@ Artifact Regisry manages Java (Maven) artifacts like Sonatype Nexus or JFrog Art
 ## Requirement
 
 ## Usage
-### Enable API
+### 1. Enable API
 ```
 $ gcloud services enable artifactregistry.googleapis.com
 ```
 
-###
+### 2. Create Maven Repository
 ```
 $ gcloud beta artifacts repositories create shinyay-maven-repo \
     --repository-format=maven \
     --location=us-central1 \
     --description="Maven Repository"
+```
+
+### 3. Configure Service Account for the client
+Creating a service account
+```
+$ gcloud iam service-accounts create shinyay-artifact \
+    --description "For Artifact Registry" \
+    --display-name "Artifact Registry for Maven"
 ```
 
 ## Installation
