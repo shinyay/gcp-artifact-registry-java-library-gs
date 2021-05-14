@@ -35,6 +35,14 @@ $ gcloud iam service-accounts create shinyay-artifact \
     --display-name "Artifact Registry for Maven"
 ```
 
+Grant the service account read and write access to your repository
+```shell
+$ gcloud artifacts repositories add-iam-policy-binding shinyay-maven-repo \
+    --location=us-central1 \
+    --member serviceAccount:shinyay-artifact@(gcloud config get-value project).iam.gserviceaccount.com \
+    --role roles/artifactregistry.writer
+```
+
 ## Installation
 
 ## References
