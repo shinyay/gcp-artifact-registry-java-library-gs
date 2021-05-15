@@ -7,15 +7,11 @@ import org.springframework.stereotype.Service;
 @EnableConfigurationProperties(SampleServiceProperties.class)
 public class SampleService {
 
-    public String getMessage() {
-        return message;
+    private final SampleServiceProperties serviceProperties;
+
+    public SampleService(SampleServiceProperties serviceProperties) {
+        this.serviceProperties = serviceProperties;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    private String message;
-
-
+    
 }
