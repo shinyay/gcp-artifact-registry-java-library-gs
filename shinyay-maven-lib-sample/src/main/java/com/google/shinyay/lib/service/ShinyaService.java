@@ -6,4 +6,14 @@ import org.springframework.stereotype.Service;
 @Service
 @EnableConfigurationProperties(ShinyaServiceProperties.class)
 public class ShinyaService {
+
+    private final ShinyaServiceProperties serviceProperties;
+
+    public ShinyaService(ShinyaServiceProperties serviceProperties) {
+        this.serviceProperties = serviceProperties;
+    }
+
+    public String message() {
+        return serviceProperties.getMessage();
+    }
 }
