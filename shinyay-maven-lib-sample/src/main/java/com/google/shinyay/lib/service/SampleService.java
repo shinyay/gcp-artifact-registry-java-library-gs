@@ -13,5 +13,7 @@ public class SampleService {
         this.serviceProperties = serviceProperties;
     }
 
-    
+    public String message() {
+        return serviceProperties.getMessage();
+    }
 }
