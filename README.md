@@ -60,7 +60,7 @@ Create Maven Project
 > [Maven Archetype references](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 
 ```
-$ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-maven-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+$ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-maven-lib-sample -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
 Display Maven Project Configuration
@@ -74,8 +74,8 @@ Create Gradle Project
 > [gradle init types references](https://docs.gradle.org/current/userguide/build_init_plugin.html)
 
 ```
-$ mkdir shinyay-gradle-lib
-$ gradle init -p shinyay-gradle-lib --type java-library --dsl groovy --test-framework junit-jupiter
+$ mkdir shinyay-gradle-lib-sample
+$ gradle init -p shinyay-gradle-lib-sample --type java-library --dsl groovy --test-framework junit-jupiter
 ```
 
 Display Gradle Project Configuration
