@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest(value = "sample.message=Hello")
 class PropertyTests {
-	
+
 	@Test
 	void contextLoads() {
 	}
