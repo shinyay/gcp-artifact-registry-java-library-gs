@@ -60,7 +60,7 @@ Create Maven Project
 > [Maven Archetype references](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 
 ```
-$ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+$ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-maven-lib -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
 Display Maven Project Configuration
