@@ -75,6 +75,9 @@ Instert the settings printed into the POM
 $ ./mvnw clean deploy -DPROJECT_ID=(gcloud config get-value project)
 ```
 
+You can see the deoloyed artifacts:
+- [Artifact Registry](http://console.cloud.google.com/artifacts)
+
 ### 5-b. Configure Gradle Project
 Create Gradle Project
 
