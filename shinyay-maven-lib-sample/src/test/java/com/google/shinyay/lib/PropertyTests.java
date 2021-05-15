@@ -15,6 +15,12 @@ class PropertyTests {
 
 	@Test
 	void contextLoads() {
+		Assertions.assertThat(service.message()).isNotNull();
+	}
+
+	@Test
+	void propertyShouldBeHello() {
+		Assertions.assertThat(service.message()).isEqualTo("Hello");
 	}
 
 	@SpringBootApplication
