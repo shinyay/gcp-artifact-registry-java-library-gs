@@ -21,7 +21,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-<!-- Dependency from Artifact Registry START-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- Dependency from Artifact Registry START-->
 		<dependency>
 			<groupId>com.google.shinyay.lib</groupId>
 			<artifactId>shinyay-maven-lib-sample</artifactId>
