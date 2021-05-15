@@ -65,7 +65,7 @@ $ mvn archetype:generate -DgroupId=com.google.shinyay.lib -DartifactId=shinyay-l
 
 Display Maven Project Configuration
 ```shell
-$ gcloud artifacts print-settings mvn --repository shinyay-maven-repo--location us-central1
+$ gcloud artifacts print-settings mvn --repository shinyay-maven-repo --location us-central1
 ```
 
 ### 5-b. Display Gradle Project Configuration
@@ -80,7 +80,7 @@ $ gradle init -p shinyay-gradle-lib --type java-library --dsl groovy --test-fram
 
 Display Gradle Project Configuration
 ```shell
-$ gcloud artifacts print-settings gradle --repository shinyay-maven-repo--location us-central1
+$ gcloud artifacts print-settings gradle --repository shinyay-maven-repo --location us-central1
 ```
 
 
