@@ -54,7 +54,7 @@ Set Environment Variable
 $ set -x GOOGLE_APPLICATION_CREDENTIALS $HOME/.config/gcloud/application_default_credentials.json
 ```
 
-### 5-a. Display Maven Project Configuration
+### 5-a. Configure Maven Project
 Create Maven Project
 
 > [Maven Archetype references](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
@@ -68,7 +68,7 @@ Display Maven Project Configuration
 $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo --location us-central1
 ```
 
-### 5-b. Display Gradle Project Configuration
+### 5-b. Configure Gradle Project
 Create Gradle Project
 
 > [gradle init types references](https://docs.gradle.org/current/userguide/build_init_plugin.html)
