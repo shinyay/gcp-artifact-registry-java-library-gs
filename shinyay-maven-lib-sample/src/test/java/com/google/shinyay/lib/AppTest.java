@@ -1,20 +1,24 @@
 package com.google.shinyay.lib;
 
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import com.google.shinyay.lib.service.ShinyaService;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * Unit test for simple App.
- */
+@SpringBootTest("shinyay.message=Hello")
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    @Autowired
+    private ShinyaService shinyaService;
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void contextLoads() {
+        Assertions.assertThat(shinyaService.message()).isNotNull();
     }
+
+    @SpringBootApplication
+    static class TestConfiguration{}
 }
