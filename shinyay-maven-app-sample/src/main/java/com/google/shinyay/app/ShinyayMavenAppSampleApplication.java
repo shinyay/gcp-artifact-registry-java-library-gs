@@ -1,4 +1,4 @@
-package com.google.shinyay.app.shinyaymavenappsample;
+package com.google.shinyay.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
