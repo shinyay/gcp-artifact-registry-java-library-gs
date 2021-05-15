@@ -68,6 +68,13 @@ Display Maven Project Configuration
 $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo --location us-central1
 ```
 
+Instert the settings printed into the POM
+
+### 6-a. Deploy artifact to Artifact Registry
+```
+$ ./mvnw clean deploy -DPROJECT_ID=(gcloud config get-value project)
+```
+
 ### 5-b. Configure Gradle Project
 Create Gradle Project
 
