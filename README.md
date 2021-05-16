@@ -70,6 +70,19 @@ $ gcloud artifacts print-settings mvn --repository shinyay-maven-repo --location
 
 Instert the settings printed into the POM
 
+#### In the case of Spring Initilizr
+Remove the following code block:
+```xml
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</build>
+```
+
 ### 6-a. Deploy artifact to Artifact Registry
 ```
 $ ./mvnw clean deploy -DPROJECT_ID=(gcloud config get-value project)
