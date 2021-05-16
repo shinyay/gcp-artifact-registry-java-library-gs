@@ -106,6 +106,17 @@ Display Gradle Project Configuration
 $ gcloud artifacts print-settings gradle --repository shinyay-maven-repo --location us-central1
 ```
 
+#### In the case of Spring Initilizr
+Add the following code block:
+```groovy
+bootJar {
+  enabled = false
+}
+
+jar {
+  enabled = true
+}
+```
 
 ## Installation
 
