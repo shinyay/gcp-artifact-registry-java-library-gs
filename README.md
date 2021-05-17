@@ -88,9 +88,6 @@ Remove the following code block:
 $ ./mvnw clean deploy -DPROJECT_ID=(gcloud config get-value project)
 ```
 
-You can see the deoloyed artifacts:
-- [Artifact Registry](http://console.cloud.google.com/artifacts)
-
 ### 5-gradle. Configure Gradle Project
 Create Gradle Project
 
@@ -147,6 +144,11 @@ jar {
 ```shell
 $ ./gradlew clean publish -PPROJECT_ID=(gcloud config get-value project)
 ```
+
+### 7. Verify the artifact on Artifact Registry
+
+You can see the deoloyed artifacts:
+- [Artifact Registry](http://console.cloud.google.com/artifacts)
 
 ## Installation
 
