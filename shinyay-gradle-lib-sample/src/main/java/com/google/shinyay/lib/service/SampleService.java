@@ -6,4 +6,14 @@ import org.springframework.stereotype.Service;
 @Service
 @EnableConfigurationProperties(SampleServiceProperties.class)
 public class SampleService {
+
+    private final SampleServiceProperties serviceProperties;
+
+    public SampleService(SampleServiceProperties serviceProperties) {
+        this.serviceProperties = serviceProperties;
+    }
+
+    public String message() {
+        return serviceProperties.getMessage();
+    }
 }
