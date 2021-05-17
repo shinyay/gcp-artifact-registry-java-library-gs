@@ -18,6 +18,11 @@ class PropertyTests {
 		Assertions.assertThat(service.message()).isNotNull();
 	}
 
+	@Test
+	void  propertyShouldBeHello() {
+		Assertions.assertThat(service.message()).isEqualTo("Hello");
+	}
+
 	@SpringBootApplication
 	static class TestProperty{}
 
